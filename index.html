@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="zoo.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <br>
+    <div class="insidePage" id="widthHeader">
+      <h1 style="color: White">Zooism</h1>
+    </div><br>
+    <div class="container" id="pageContainer">
+      <div class="insidePage">
+        <p style ="font-weight: bold">Create an animal:</p>
+        <select title="animalSelector" id="animals">
+          <option value="1">Tiger</option>
+          <option value="2">Bear</option>
+          <option value="3">Unicorn</option>
+          <option value="4">Giraffe</option>
+          <option value="5">Bee</option>
+        </select>
+        <input type="text" id="name" placeholder="Animal name">
+        <button onclick="createAnimal()">Create!</button><br><br>
+        <p style ="font-weight: bold" id="allowed"></p><br>
+        <!-- <button class="w3-button w3-indigo"><onclick="createAnimal()">Create!</button><br><br> -->
+        <input type="text" id="delete" placeholder="Animal id">
+        <button onclick="deleteAnimal()">Delete</button><br><br>
+        <button onclick="listAnimals()">List All Animals</button>
+      </div><br>
+      <div class="insidePage">
+        <p style ="font-weight: bold">Change an Animals Name</p>
+        <input type="text" id="oldName" placeholder="Animal id">
+        <input type="text" id="newName" placeholder="New name">
+        <button onclick="renameAnimal()">Rename</button>
+      </div><br>
+      <div class="insidePage">
+        <p style ="font-weight: bold">Animals:</p>
+        <p id="allAnimals"></p>
+        <p style="font-weight: bold">Animal Cemetery</p>
+        <p id="deadAnimals"></p>
+      </div><br>
+      <div class="insidePage">
+        <p>Menu</p>
+        <ul>
+          <p value="mea"><span>* Meat</span></p>
+          <p value="fis"><span>* Fish</span></p>
+          <p value="mar"><span>* Marshmallows</span></p>
+          <p value="lea"><span>* Leaves</span></p>
+          <p value="pol"><span>* Pollen</span></p>
+          <p value="sou"><span>* Soup</span></p>
+          <p value="sal"><span>* Salad</span></p>
+        </ul>
+        <select title="foodSelector" id="food">
+          <option value="1"><span>Meat</span></option>
+          <option value="2"><span>Fish</span></option>
+          <option value="3"><span>Marshmallows</span></option>
+          <option value="4"><span>Leaves</span></option>
+          <option value="5"><span>Pollen</span></option>
+          <option value="6"><span>Soup</span></option>
+          <option value="7"><span>Salad</span></option>
+        </select>
+        <button onclick="feedAnimals()">Feed</button>
+      </div><br>
+      <div class="insidePage" id="feed">
+      </div><br>
+  </body>
+</html>
